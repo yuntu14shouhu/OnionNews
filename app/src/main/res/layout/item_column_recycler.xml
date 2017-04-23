@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_recycler">
+
+    <TextView
+        android:id="@+id/tv_titlect"
+        android:text="标签标签签"
+        android:textSize="14sp"
+        android:textColor="@color/item_text_color"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="81dp"
+        android:layout_height="35dp" />
+
+</FrameLayout>

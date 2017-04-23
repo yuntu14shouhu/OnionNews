@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_guide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.onionnews.demo.onionnews.Activity.GuideActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_guide"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="500dp">
+        <ImageView
+            android:id="@+id/iv_guide2"
+            android:src="@mipmap/style_before"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/iv_guide1"
+            android:src="@mipmap/style_after"
+            android:layout_toLeftOf="@id/iv_guide2"
+            android:layout_marginRight="50dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"/>
+        <ImageView
+            android:id="@+id/iv_guide3"
+            android:src="@mipmap/style_before"
+            android:layout_toRightOf="@id/iv_guide2"
+            android:layout_marginLeft="50dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_jump"
+        android:text="跳过"
+        android:textSize="16sp"
+        android:textColor="#fc0011"
+        android:background="@drawable/btn_bg"
+        android:layout_gravity="end"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</FrameLayout>

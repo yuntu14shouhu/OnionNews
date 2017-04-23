@@ -1,0 +1,26 @@
+<resources>
+    <style name="AppTheme" parent="AppTheme.Base"/>
+    <!--自定义Theme-->
+    <style name="AppTheme.Base" parent="Theme.AppCompat">
+        <!--将ActionBar隐藏，这里使用ToolBar-->
+        <item name="windowActionBar">false</item>
+        <!--如果使用API Level 22以上编译的话，要拿掉前缀字-->
+        <item name="windowNoTitle">true</item>
+        <!--colorPrimary对应ToolBar颜色-->
+        <item name="colorPrimary">#f14049</item>
+        <!--colorPrimaryDark对应状态栏的颜色-->
+        <item name="colorPrimaryDark">#1e1d1d</item>
+        <!--colorAccent对应的是EditText编辑时，RadioButton选中，CheckBox等选中时的颜色-->
+        <item name="colorAccent">#08fc35</item>
+        <!--windowBackground窗口的颜色-->
+        <item name="android:windowBackground">@color/windowColor</item>
+    </style>
+    <color name="windowColor">#e9e9e0</color>
+</resources>
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+    <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->

@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "24.0.1"
+    defaultConfig {
+        applicationId "com.onionnews.demo.onionnews"
+        minSdkVersion 18
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile files('src/main/java/com/onionnews/demo/onionnews/gson-2.2.2.jar')
+    compile files('src/main/java/com/onionnews/demo/onionnews/volley.jar')
+    compile project(path: ':pulllistview')
+    compile 'com.android.support:recyclerview-v7:23.1.0'
+    compile files('libs/MobCommons-2016.1020.1028.jar')
+    compile files('libs/MobTools-2016.1020.1028.jar')
+    compile files('libs/ShareSDK-Core-2.7.8.jar')
+    compile files('libs/ShareSDK-QQ-2.7.8.jar')
+    compile files('libs/ShareSDK-QZone-2.7.8.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.7.8.jar')
+    compile files('libs/ShareSDK-TencentWeibo-2.7.8.jar')
+    compile files('libs/ShareSDK-Wechat-2.7.8.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.7.8.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.7.8.jar')
+    compile files('src/main/java/com/onionnews/demo/onionnews/universal-image-loader-1.8.5-with-sources.jar')
+}
